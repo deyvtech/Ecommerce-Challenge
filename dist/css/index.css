@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+li,
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.main-wrapper {
+  width: 1440px;
+  margin-inline: auto;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+header {
+  display: flex;
+  height: 150px;
+  border-bottom: 3px solid hsl(223deg, 64%, 98%);
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+header .profile img {
+  width: 50px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .profile img:hover {
+  border: 2px solid hsl(26deg, 100%, 55%);
+  border-radius: 50%;
+  transition: all 0.5s ease-in;
+}
+header > *:nth-child(1) {
+  flex-basis: 15%;
+}
+header > *:nth-child(2) {
+  flex-basis: 65%;
+}
+header > *:nth-child(3) {
+  flex-basis: 10%;
+}
+header > *:nth-child(4) {
+  flex-basis: 10%;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  flex-basis: 13%;
+}
+header nav ul li a {
+  display: inline-block;
+}
+header nav ul li a:hover {
+  color: hsl(26deg, 100%, 55%);
+  letter-spacing: 2px;
+  transition: letter-spacing 0.5s ease-in;
+}
+header nav ul li a::after,
+header nav ul li a:hover::after {
+  left: 0;
+  bottom: 0;
+  display: block;
+  transition: width 0.5s ease-out;
+  height: 4px;
+}
+header nav ul li a::after {
+  content: "";
+  width: 0;
+  margin-inline: auto;
+  background-color: hsl(26deg, 100%, 55%);
+}
+header nav ul li a:hover::after {
+  width: 100%;
+  background-color: hsl(26deg, 100%, 55%);
+}
+
+.container {
+  display: flex;
+  margin: 0 5% 0 5%;
+  gap: 5rem;
+  justify-content: center;
+}
+.container .col-1 {
+  flex-basis: 50%;
+}
+.container .col-1 .big-img {
+  overflow: hidden;
+  width: 100%;
+  height: 570px;
+}
+.container .col-1 .big-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+}
+.container .col-1 .small-img {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  height: 130px;
+}
+.container .col-1 .small-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+.container .col-2 {
+  flex-basis: 50%;
+  font-family: "Kumbh Sans", sans-serif;
+  margin-left: 5rem;
+  padding: 5rem 0 5rem 0;
+}
+.container .col-2 > * {
+  margin-bottom: 2.5rem;
+}
+.container .col-2 h3 {
+  color: hsl(26deg, 100%, 55%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.container .col-2 h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.container .col-2 p {
+  color: hsl(219deg, 9%, 45%);
+  line-height: 1.75rem;
+}
+.container .col-2 .price {
+  font-size: 1.75rem;
+}
+.container .col-2 .badge-per-discount {
+  padding: 7px 13px;
+  background-color: hsl(25deg, 100%, 94%);
+  text-align: center;
+  font-size: 16px;
+  color: hsl(26deg, 100%, 55%);
+  border-radius: 5px;
+  font-weight: 700;
+}
+.container .col-2 .minus-price {
+  color: hsl(220deg, 14%, 75%);
+  text-decoration: line-through;
+}
+.container .col-2 .btn-col {
+  display: flex;
+  height: 2.5rem;
+  gap: 1rem;
+}
+.container .col-2 .btn-plus-minus {
+  padding: 0.5rem 1rem;
+  background-color: hsl(223deg, 64%, 98%);
+  border-radius: 5px;
+}
+.container .col-2 .btn-plus-minus img {
+  width: 15px;
+  height: auto;
+}
+.container .col-2 .btn-plus-minus span {
+  margin: 1rem;
+}
+.container .col-2 .btn-plus-minus .minus,
+.container .col-2 .btn-plus-minus .plus {
+  cursor: pointer;
+}
+.container .col-2 .btn-plus-minus .num {
+  margin-inline: 10px-;
+}
+.container .col-2 .add-to-cart {
+  padding: 0.75rem 5rem;
+  background-color: hsl(26deg, 100%, 55%);
+  border: none;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container .col-2 .add-to-cart img {
+  width: 15px;
+  height: 15px;
+  filter: brightness(300%);
+  margin-right: 1rem;
+}
+.container .col-2 .add-to-cart:hover {
+  background-color: hsl(26deg, 100%, 55%);
+}/*# sourceMappingURL=index.css.map */
